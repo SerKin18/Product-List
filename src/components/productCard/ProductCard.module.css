@@ -105,12 +105,10 @@
 }
 @media (max-width: 500px) {
   .product_card__body {
-	width: 80%;
-  flex-direction: row;
- 
-  
+    width: 80%;
+    flex-direction: row;
   }
-  .footer_price{
-	flex-direction: column;
+  .footer_price {
+    flex-direction: column;
   }
 }

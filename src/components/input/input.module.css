@@ -1,0 +1,145 @@
+.form_modal {
+  margin-top: 16px;
+  max-width: 100%;
+}
+.input_number_value {
+  position: relative;
+}
+.input_modal {
+  display: block;
+  margin: 16px 0px 0px 0px;
+  width: 256px;
+  padding: 19px;
+  border: 1px solid #00000020;
+  border-radius: 16px;
+}
+.input_modal::placeholder {
+  color: #00000050;
+}
+.input_modal_success {
+  position: relative;
+  display: block;
+  margin: 16px 0px 0px 0px;
+  width: 256px;
+  padding: 19px;
+  border-radius: 16px;
+  border: 1px solid #50daa8;
+}
+
+.input_modal_false {
+  position: relative;
+  display: block;
+  margin: 16px 0px 0px 0px;
+  width: 256px;
+  padding: 19px;
+  border-radius: 16px;
+  border: 1px solid #e43f3f;
+}
+
+.button_modal {
+  width: 288px;
+  border: 1px solid #00000086;
+  border-radius: 16px;
+  padding: 15px;
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 24px;
+  font-size: 16px;
+  color: #4bcfa0;
+  margin: 32px 0px 0px 0px;
+}
+.button_modal:hover {
+  background-color: #4bcfa0;
+  color: white;
+  border: 1px solid #4bcfa0;
+}
+.button_modal:hover .arrow_right {
+  content: "";
+  display: inline-block;
+  position: relative;
+  width: 14px;
+  height: 2px;
+  background-color: rgb(248, 245, 245);
+  margin: 0px 0px 5px 10px;
+  border-radius: 2px;
+  top: 0;
+}
+.arrow_right:before,
+.arrow_right:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 8px;
+  height: 2px;
+  border-radius: 2px;
+  background-color: rgb(248, 245, 245);
+}
+.arrow_right:before {
+  top: -2px;
+  right: -1px;
+  transform: rotate(45deg);
+}
+.arrow_right::after {
+  top: 2px;
+  right: -1px;
+  transform: rotate(-45deg);
+}
+.input_field {
+  position: relative;
+  max-width: 300px;
+  width: 100%;
+}
+.error_input {
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  width: 24px;
+  height: 24px;
+  background-color: #fc0404;
+  border-radius: 50%;
+  z-index: 1;
+}
+.error_input__value::before,
+.error_input__value::after {
+  top: 11px;
+  right: 2px;
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  border-radius: 1px;
+  background: rgb(252, 251, 251);
+}
+.error_input__value::before {
+  transform: rotate(45deg);
+}
+.error_input__value::after {
+  transform: rotate(-45deg);
+}
+.input_modal_success .error_input {
+  background-color: #fff;
+}
+@media (max-width: 630px) {
+  .modal_body {
+    display: flex;
+    max-width: 70%;
+    max-height: 80%;
+  }
+  .subTitle_modal {
+    margin: 20px 0px 0px 0px;
+  }
+  .title_modal {
+    font-size: 25px;
+    margin: 0px;
+  }
+  .price_modal span {
+    font-size: 40px;
+  }
+
+  .button_modal {
+    max-width: 70%;
+    padding: 10px 10px;
+    margin: 30px 0px 30px 0px;
+  }
+}

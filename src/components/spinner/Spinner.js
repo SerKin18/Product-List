@@ -1,9 +1,9 @@
 import React from "react";
-import "./Spinner.css";
+import style from"./Spinner.module.css";
 export const Spinner = () => {
   return (
-    <div className="loadingio-spinner-rolling-0dius0l7nxtk">
-      <div className="ldio-o0y4krznwic">
+    <div className={style.circleSpinnerRolling}>
+      <div className={style.circle}>
         <div></div>
       </div>
     </div>
